@@ -1,0 +1,14 @@
+///////////////// WALLE IMG /////////////////
+.imageContainer {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  top: 10vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
