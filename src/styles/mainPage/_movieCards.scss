@@ -1,0 +1,63 @@
+.movieCards {
+  width: 250px;
+  height: 400px;
+  margin: 30px 0 0 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(255, 102, 0, 0.589);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  &:hover .infoCard {
+    transform: translateY(0%);
+  }
+  img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+}
+.titleVote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.363);
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  font-family: $roboto;
+  gap: 5px;
+}
+.starVote {
+  display: flex;
+  gap: 5px;
+
+  .star {
+    color: gold;
+  }
+}
+.infoCard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: $roboto;
+  text-align: center;
+  right: 0;
+  color: #fff;
+  background-color: rgba(61, 60, 60);
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  padding: 15px;
+  max-height: 100%;
+  overflow: auto;
+}

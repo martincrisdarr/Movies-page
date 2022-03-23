@@ -1,9 +1,10 @@
 import React from 'react'
-
+import walle from '../../images/walle.jpg'
 function Walleimg() {
   return (
     <div className='imageContainer'>
-      <img src="https://fondosmil.com/fondo/12752.jpg"></img>
+      <img src={walle}></img>
+      <div className='difusor'></div>
     </div>
   )
 }

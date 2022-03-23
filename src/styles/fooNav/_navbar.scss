@@ -9,7 +9,10 @@
   justify-content: space-between;
   align-items: center;
   font-family: $roboto;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  opacity: 0.9;
   .title-nav-container {
     display: flex;
     cursor: pointer;
@@ -25,7 +28,6 @@
   gap: 30px;
   height: 100%;
   padding-right: 30px;
-
   .first-navbar-list {
     display: flex;
     align-items: center;
@@ -44,7 +46,6 @@
   }
   ul li {
     list-style: none;
-
     font-weight: bold;
     font-size: 120%;
     cursor: pointer;
@@ -57,5 +58,13 @@
     &:hover {
       color: #fff;
     }
+  }
+}
+@media screen and (max-width: 650px) {
+  ul li {
+    display: none;
+  }
+  .navbar-line {
+    display: none;
   }
 }

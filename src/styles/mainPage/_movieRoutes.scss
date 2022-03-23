@@ -1,0 +1,19 @@
+.movieRoutes {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  .movieLinks {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: $oswald;
+    letter-spacing: 2px;
+    font-size: 150%;
+    margin-left: -20px;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+}

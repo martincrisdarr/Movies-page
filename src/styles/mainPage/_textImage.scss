@@ -4,11 +4,11 @@
   flex-direction: column;
   gap: 35px;
   position: absolute;
+  z-index: 1;
   top: 30%;
   left: 15%;
   color: azure;
   font-family: $libreBaskerville;
-
   align-items: flex-start;
   .imgTitle {
     font-size: 3rem;
@@ -19,19 +19,9 @@
 
     font-family: $oswald;
   }
-  .imgButton {
-    width: 200px;
-    height: 35px;
-    color: #000;
-    background-color: $orange;
-    border-radius: 0.7rem;
-    border: 2px solid #000;
-    font-weight: bold;
-    font-size: 110%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .mainImageText {
+    width: 70%;
   }
 }

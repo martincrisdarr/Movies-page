@@ -11,7 +11,6 @@ function Navbar() {
           <div className='navbar-lists'>
             <ul className='first-navbar-list'>
               <li className='navbarPremium'>Premium</li>
-              <li>Aplicación</li>
             </ul>
             <div className='navbar-line'></div>
             <ul className='second-navbar-list'>
