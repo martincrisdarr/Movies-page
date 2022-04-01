@@ -1,6 +1,6 @@
 import React from 'react'
-import TextImage from './main-page/TextImage'
-import Walleimg from './main-page/Walleimg'
+import TextImage from './TextImage'
+import Walleimg from './Walleimg'
 function FirstTemplate() {
   return (
     <>

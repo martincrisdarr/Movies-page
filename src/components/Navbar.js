@@ -1,23 +1,25 @@
 import React from 'react'
-import { BiMoviePlay } from "react-icons/bi";  
+import { BiMoviePlay, BiMenu } from "react-icons/bi";  
+import {Link} from 'react-router-dom'
 function Navbar() {
   return (
     <>
         <div className='navbarContainer'>
           <div className='title-nav-container'>
-            <h1>Plus Film</h1>
+            <Link to='/' className='plusTitle'>Plus Film</Link>
             <BiMoviePlay size="2rem" />
           </div>
           <div className='navbar-lists'>
-            <ul className='first-navbar-list'>
-              <li className='navbarPremium'>Premium</li>
-            </ul>
+            <div className='first-navbar-list'>
+              <Link to='/premium' className='navbarPremium'>Premium </Link>
+            </div>
             <div className='navbar-line'></div>
-            <ul className='second-navbar-list'>
-              <li>Iniciar sesion</li>
-              <li>Registrarse</li>
-            </ul>
+            <div className='second-navbar-list'>
+              <Link to='/login' className='enlaces'>Iniciar sesion </Link>
+              <Link to='/registro' className='enlaces'>Registrarse</Link>
+            </div>
           </div>
+          <BiMenu className='menuButton' size="2rem"/>
         </div>
     </>
   )

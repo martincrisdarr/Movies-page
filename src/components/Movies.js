@@ -1,14 +1,12 @@
 import React from 'react'
-import Kids from './type-movies/Kids'
-import Popular from './type-movies/Popular'
-import Rated from './type-movies/Rated'
+
 import MovieCard from './MovieCard'
 
-import {BrowserRouter,Routes,Route,Link} from "react-router-dom";
+
 function Movies() { 
     const [movies, setMovies] = React.useState ([])
     const [movieType, setMovieType] = React.useState("rated")
-    const [isLoading, setIsLoading] = React.useState(false)
+    const [isLoading, setIsLoading] = React.useState(true)
     const urlPopularity = '/discover/movie?sort_by=popularity.desc'
     const kids = '/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc'
     const rated = '/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22'
@@ -58,8 +56,8 @@ function Movies() {
       }
     }, [movieType])
     return (
+      <>  
       <div className='movieContainer'>
-
         <div className='movieRoutes'>
           <span className='movieLinks' to="#" onClick={(e) => e.preventDefault() & setMovieType("rated")}>Rated</span>
           <span className='movieLinks' to="#" onClick={(e) => e.preventDefault() & setMovieType("popular")}>Popular</span>
@@ -70,6 +68,7 @@ function Movies() {
               movies.map((movie) => <MovieCard  key={movie.id} {...movie} />)}
         </div>
       </div>
+      </>
     )
   }
 

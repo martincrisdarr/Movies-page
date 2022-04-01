@@ -1,5 +1,5 @@
 import React from 'react'
-import walle from '../../images/walle.jpg'
+import walle from '../../../images/walle.jpg'
 function Walleimg() {
   return (
     <div className='imageContainer'>
